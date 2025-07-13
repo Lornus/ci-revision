@@ -1,9 +1,9 @@
 pipeline {
-    agent {
-        dockerfile {
-            filename 'Dockerfile'
-        }
-    }
+      agent { 
+        node {
+            label 'docker-agent-python'
+            }
+      }
      triggers {
         pollSCM('H/5 * * * *')
     }
