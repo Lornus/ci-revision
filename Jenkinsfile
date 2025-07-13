@@ -17,7 +17,6 @@ pipeline {
             steps {
                 echo "Testing.."
                 sh '''
-                cd /app
                 python3 test.py
                 '''
             }
